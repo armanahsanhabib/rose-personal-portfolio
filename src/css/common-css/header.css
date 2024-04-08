@@ -1,0 +1,138 @@
+/*======== Header CSS ========*/
+header {
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo_area img {
+    height: 45px;
+    display: block;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 15px 0;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fe3d4e;
+    transition: 0.3s ease;
+    transform: scaleX(0);
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+header .right_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .right_menu .btn-menu {
+    margin-left: 10px;
+    display: none;
+}
+
+header .right_menu .btn-menu i {
+    background-color: #fdf7f9;
+    border-radius: 50px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fe3d4e;
+    box-shadow: 1px 1px 5px #ff9fa793;
+}
+
+/*======== Header Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+    /* header {
+        background-color: rgb(233, 24, 198);
+    } */
+}
+
+/*======== Header Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    header .logo_area img {
+        height: 40px;
+    }
+
+    header .right_menu .btn-menu {
+        display: block;
+        z-index: +2;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header nav {
+        background-color: rgb(235, 235, 235);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        z-index: +2;
+        box-shadow: -3px 3px 10px #999;
+        padding: 15px 20px;
+        display: none;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0 10px;
+    }
+
+    /* header nav ul li a {
+        color: #fff;
+    } */
+}
+
+/*======== Header Mobile < 425px ========*/
+
+@media screen and (max-width: 425px) {
+    header .logo_area img {
+        height: 35px;
+    }
+
+    header .right_menu .btn-primary {
+        display: none;
+    }
+
+    header .right_menu .btn-menu i {
+        width: 45px;
+        height: 45px;
+        box-shadow: 1px 1px 5px #ff9fa793;
+    }
+}

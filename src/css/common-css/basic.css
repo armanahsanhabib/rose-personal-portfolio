@@ -1,0 +1,153 @@
+/*======== Basic CSS ========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    color: #333333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Prata', serif;
+    /* font-family: 'Noto Serif Khojki', serif; */
+    color: #0c1029;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fe3d4e;
+}
+
+.btn-primary a,
+input.btn-primary {
+    display: inline-block;
+    background-color: #fe3d4e;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: 2px solid #fe3d4e;
+    transition: 0.3s ease;
+}
+
+.btn-primary a:hover,
+input.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #0c1029;
+}
+
+.btn-secondary a,
+input.btn-secondary {
+    display: inline-block;
+    color: #a0a7c3;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    outline: 2px solid #e8e9fd;
+}
+
+.btn-secondary a i,
+input.btn-secondary {
+    color: #a0a7c3;
+    transition: 0.3s ease;
+}
+
+.btn-secondary a:hover,
+input.btn-secondary:hover {
+    color: #fe3d4e;
+    outline: 2px solid #fe3d4e;
+}
+
+.btn-secondary a:hover i {
+    color: #fe3d4e;
+}
+
+h2.section-title {
+    color: #fe3d4e;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    position: relative;
+    display: inline-block;
+}
+
+h2.section-title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 5px;
+    background-color: #fe3d4e;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+
+    .btn-primary a,
+    input.btn-primary {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .btn-secondary a,
+    input.btn-secondary {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/*======== Responsive: Laptop < 768px ========*/
+
+@media screen and (max-width: 768px) {
+
+    /* .btn-primary a,
+    input.btn-primary {
+        font-size: 12px;
+    }
+
+    .btn-secondary a,
+    input.btn-secondary {
+        font-size: 12px;
+    } */
+
+    h2.section-title {
+        font-size: 1.75rem;
+    }
+
+}

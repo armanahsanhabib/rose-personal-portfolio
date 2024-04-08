@@ -1,0 +1,17 @@
+/*========> Hero Secondary <========*/
+.hero-secondary {
+    background-color: #f7f5ff;
+}
+
+.hero-secondary .container {
+    padding: 100px 0;
+    background-image: url(../../images/half-circle.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.hero-secondary .container p {
+    margin-top: 10px;
+    color: #999;
+}

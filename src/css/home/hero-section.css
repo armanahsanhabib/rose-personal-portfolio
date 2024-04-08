@@ -1,0 +1,119 @@
+/*========> Hero Main <========*/
+.hero-main {
+    background-color: #f7f5ff;
+}
+
+.hero-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-main .container .img-area img {
+    display: block;
+    height: 550px;
+    width: auto;
+    background-image: url(../../images/circleBg.svg);
+    background-position: 0 120px;
+    background-repeat: no-repeat;
+}
+
+.hero-main .container .title-txt {
+    margin-bottom: 15px;
+    color: #fe3d4e;
+    font-weight: 500;
+}
+
+.hero-main .container h1 {
+    font-size: 3em;
+}
+
+.hero-main .container h3 {
+    margin-bottom: 15px;
+}
+
+.hero-main .container p {
+    margin-bottom: 30px;
+}
+
+.hero-main .container .buttons .btn-primary {
+    margin-right: 20px;
+}
+
+.hero-main .container .buttons .btn-secondary i {
+    margin-right: 5px;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+
+    .hero-main .container {
+        padding: 120px 0;
+        position: relative;
+    }
+
+    .hero-main .container h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-main .container .txt-area {
+        z-index: +1;
+    }
+
+    .hero-main .container .img-area img {
+        height: 400px;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+    }
+}
+
+/*======== Header Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    .hero-main .container {
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .hero-main .container h1 {
+        font-size: 2.25em;
+    }
+
+    .hero-main .container .img-area img {
+        height: 300px;
+    }
+
+    .hero-main .container p {
+        margin-bottom: 20px;
+    }
+
+    .hero-main .container h3 {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+}
+
+/*======== Header Mobile < 425px ========*/
+
+@media screen and (max-width: 425px) {
+    .hero-main .container {
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+
+    .hero-main .container h1 {
+        font-size: 1.75em;
+    }
+
+    .hero-main .container .img-area img {
+        height: auto;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}

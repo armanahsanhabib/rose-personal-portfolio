@@ -1,0 +1,116 @@
+/*========> Testimonial Section <========*/
+.testimonials-section {
+    background-color: #f7f5ff;
+}
+
+.testimonials-section .container {
+    padding: 150px 0;
+}
+
+.testimonials-section .container h2.section-title {
+    margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.testimonials-section .container p.tesmonial-info {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+/*========> Testimonial Card <========*/
+.testimonials-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.testimonial-card {
+    border: 3px solid #eee;
+    padding: 50px 40px;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(143, 143, 143, 0.5);
+}
+
+
+.testimonial-card .client {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .client img {
+    height: 100%;
+    margin-right: 15px;
+    border-radius: 50%;
+    outline: 2px solid #fe3d4e;
+}
+
+.testimonial-card .client-name {
+    color: #fe3d4e;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.testimonial-card .review .job-name {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* .testimonial-card .review .comment::before {
+    content: "";
+}
+
+.testimonial-card .review .comment::after {
+    content: "";
+} */
+
+.testimonial-card .review .stars i {
+    color: #fe3d4e;
+    margin-right: 5px;
+}
+
+.testimonial-card .review .stars {
+    margin-bottom: 20px;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+    .testimonials-section .container {
+        padding: 120px 0;
+    }
+
+    .testimonials-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*======== Responsive: Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    .testimonials-section .container {
+        padding: 100px 0;
+    }
+
+    .testimonials-card-container {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .testimonials-section .container p.tesmonial-info {
+        margin-bottom: 50px;
+    }
+}
+
+/*======== Mobile < 425px ========*/
+
+@media screen and (max-width: 425px) {
+    .testimonials-card-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

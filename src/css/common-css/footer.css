@@ -1,0 +1,130 @@
+/*======== Footer CSS ========*/
+footer {
+    background-color: #000a2d;
+    padding: 100px 0;
+}
+
+footer * {
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .social-area {
+    width: 300px;
+    margin-right: 100px;
+}
+
+footer .social-area img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+footer .social-area p {
+    margin-bottom: 30px;
+    color: #a0a7c3;
+}
+
+footer .social-area h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+footer .social-area .social-icons i {
+    margin-right: 15px;
+    color: #a0a7c3;
+}
+
+footer .social-area .social-icons i:hover {
+    color: #fff;
+}
+
+footer .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .contact-details h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+footer .contact-details .columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .contact-details .col h3 {
+    margin-bottom: 10px;
+    color: #a0a7c3;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .contact-details .col h3 i {
+    color: #a0a7c3;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+    footer .social-area {
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    footer .social-area img {
+        width: 150px;
+    }
+
+}
+
+
+/*======== Responsive: Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 80px 0;
+    }
+
+    footer .social-area {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    footer .social-area img {
+        width: 150px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .contact-details h2 {
+        margin-bottom: 20px;
+    }
+
+    footer .contact-details .columns {
+        flex-direction: column;
+    }
+
+    footer .contact-details .col {
+        margin-bottom: 20px;
+    }
+
+    footer .contact-details .col:last-child {
+        margin-bottom: 0;
+    }
+
+    footer .contact-details .col h3 {
+        margin-bottom: 5px;
+    }
+
+}

@@ -1,0 +1,115 @@
+/*======== Contact Section CSS ========*/
+.contact-section {
+    background-color: #f7f5ff;
+    /*     background-image: url(../images/dotted-world-map.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.contact-section .container {
+    padding: 120px 0;
+}
+
+.contact-section .container h2.section-title {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 80px;
+}
+
+.contact-section .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-section .container .content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-section .container .contact-form .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contact-section .container .contact-form .item label {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contact-section .container .contact-form .item label .required {
+    color: #fe3d4e;
+}
+
+.contact-section .container .contact-form .item input,
+.contact-section .container .contact-form .item textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid #dcdbe9;
+}
+
+.contact-section .container .contact-form .item input:focus,
+.contact-section .container .contact-form .item textarea:focus {
+    border: 2px solid #ff9fa7;
+    outline: none;
+}
+
+.contact-section .container .contact-form .item textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-section .container .contact-form .button input.btn-primary {
+    padding: 10px 35px;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.contact-section .container .contact-form .button input.btn-secondary {
+    font-weight: 600;
+    padding: 10px 35px;
+    border: none;
+    outline: 2px solid #dcdbe9;
+}
+
+.contact-section .container .contact-form .button input.btn-secondary:hover {
+    outline: 2px solid #fe3d4e;
+}
+
+.contact-section .container .address-location {
+    border: 0;
+    height: 100%;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+    .contact-section .container .content {
+        grid-template-columns: 1fr;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .contact-section .container .contact-form .button input.btn-primary {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact-section .container .content iframe {
+        height: 400px;
+    }
+}
+
+
+/*======== Responsive: Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    .contact-section .container .content {
+        width: 90%;
+    }
+}

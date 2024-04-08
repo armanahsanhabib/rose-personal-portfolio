@@ -1,0 +1,128 @@
+/*========> Skills Section <========*/
+.skills-section {
+    background-color: #fff;
+}
+
+.skills-section .container {
+    padding: 150px 0;
+}
+
+.skills-section .container h2.section-title {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 80px;
+}
+
+.skills-section .container .skills-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-section .container .skills-box .skill-card-container {
+    width: 50%;
+}
+
+.skills-section .container .skills-box .image-area {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.skills-section .container .btn-primary {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.skills-section .container .btn-primary a {
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+/*========> Skill Card <========*/
+
+.skill-card-container .skill-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.skill-card-container .skill-card .skill-icon {
+    text-align: center;
+    width: 75px;
+}
+
+.skill-card-container .skill-card .skill-icon i {
+    font-size: 28px;
+    color: #fe3d4e;
+}
+
+.skill-card-container .skill-card h3 {
+    font-size: 14px;
+    width: 160px;
+}
+
+.skill-card-container .skill-card .progress-bar-container {
+    height: 20px;
+    width: 60%;
+    background-color: #ccc;
+    position: relative;
+}
+
+.skill-card-container .skill-card .progress-bar {
+    height: 100%;
+    background-color: #fe3d4e;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill-card-container .skill-card .percent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+    .skills-section .container {
+        padding: 120px 0;
+    }
+
+    .skills-section .container .skills-box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .skills-section .container .skills-box .skill-card-container {
+        width: 80%;
+    }
+
+    .skills-section .container .skills-box .image-area {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+}
+
+/*======== Responsive: Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    .skills-section .container {
+        padding: 100px 0;
+    }
+
+    .skills-section .container .skills-box .skill-card-container {
+        width: 90%;
+    }
+
+    .skills-section .container .skills-box .image-area {
+        width: 70%;
+    }
+}

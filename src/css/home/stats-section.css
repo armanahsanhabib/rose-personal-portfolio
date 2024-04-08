@@ -1,0 +1,76 @@
+/*======== Stats CSS ========*/
+.stats-section {
+    background-color: #f7f5ff;
+}
+
+.stats-section .container {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats-section .container .stats-item {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.stats-section .container .stats-item .icon {
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px #eee;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.stats-section .container .stats-item .icon i {
+    color: #fe3d4e;
+    font-size: 32px;
+}
+
+.stats-section .container .stats-item .counts {
+    font-size: 46px;
+    margin-bottom: 5px;
+}
+
+.stats-section .container .stats-item .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1024px) {
+    .stats-section .container .stats-item .icon {
+        height: 80px;
+        width: 80px;
+    }
+
+    .stats-section .container .stats-item .icon i {
+        font-size: 25px;
+    }
+
+    .stats-section .container .stats-item .counts {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+}
+
+/*======== Responsive: Laptop < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    .stats-section .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 0;
+    }
+}

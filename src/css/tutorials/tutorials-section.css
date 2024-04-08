@@ -1,0 +1,62 @@
+.tutorials-section .container {
+    padding: 150px 0;
+}
+
+.tutorials-section .container .top-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tutorials-section .tutorials-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.tutorials-section .tutorials-card {
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f7f5ff;
+}
+
+.tutorials-section .tutorials-card:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+/*======== Responsive: Laptop < 1024px ========*/
+
+@media screen and (max-width: 1200px) {
+    .tutorials-section .tutorials-card-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .tutorials-section .tutorials-card {
+        max-width: min-content;
+        margin: 0 auto;
+    }
+
+}
+
+/*======== Responsive: Tablet < 768px ========*/
+
+@media screen and (max-width: 450px) {
+    .tutorials-section .tutorials-card {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .tutorials-section .tutorials-card iframe {
+        max-width: 100% !important;
+        height: 200px;
+    }
+}

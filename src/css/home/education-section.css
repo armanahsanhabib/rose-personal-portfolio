@@ -1,0 +1,100 @@
+/*========> Education and Experience <========*/
+.education-section {
+    background-color: #fff;
+}
+
+.education-section .container h2.section-title {
+    margin-bottom: 80px;
+}
+
+.education-section .container {
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-section .container .education {
+    width: 50%;
+}
+
+.education-section .container .education-image-container {
+    width: 50%;
+}
+
+.education-section .container .education-image-container img {
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.education-section .degree {
+    padding-bottom: 50px;
+    border-left: 3px solid #fef2f2;
+    padding-left: 50px;
+    position: relative;
+}
+
+.education-section .degree:last-child {
+    padding-bottom: 0;
+}
+
+.education-section .degree::after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 1px;
+    height: 8px;
+    width: 8px;
+    background-color: #fe3d4e;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0px 0px 10px #ff9fa7;
+    outline: 1px solid #eee;
+}
+
+.education-section .year {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fe3d4e;
+    margin-bottom: 10px;
+}
+
+/*======== Responsive: Tablet < 768px ========*/
+
+@media screen and (max-width: 768px) {
+    .education-section .container {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .education-section .container h2.section-title {
+        /* position: relative;
+        left: 50%;
+        transform: translate(-50%); */
+        margin-bottom: 60px;
+    }
+
+    .education-section .container .education {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .education-section .container .education .degree-container {
+        z-index: +1;
+    }
+
+    .education-section .container .education-image-container {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        /* position: absolute;
+        right: 0;
+        bottom: 0; */
+    }
+
+    .education-section .container .education-image-container img {
+        height: auto;
+    }
+}
